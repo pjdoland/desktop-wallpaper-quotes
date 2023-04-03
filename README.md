@@ -1,4 +1,4 @@
-# Text to Image Generator
+# Desktop Pattern Quotes
 
 A simple Python script to create images with text from a file, centering the text on a solid background. Useful for generating title cards, presentation slides, or custom wallpapers with quotes.
 
