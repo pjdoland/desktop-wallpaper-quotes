@@ -1,4 +1,4 @@
-# Desktop Pattern Quotes
+# Desktop Wallpaper Quotes
 
 A simple Python script to create images with text from a file, centering the text on a solid background. Useful for generating title cards, presentation slides, or custom wallpapers with quotes.
 
@@ -46,7 +46,7 @@ pip install Pillow
 3. Run the script:
 
 ``` bash
-python desktop-pattern-quotes.py
+python desktop-wallpaper-quotes.py
 ```
 
 4. The generated images will be saved in the `output` directory.
