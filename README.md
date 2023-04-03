@@ -28,7 +28,7 @@ A simple Python script to create images with text from a file, centering the tex
 1. Clone the repository to your local machine:
 
 ``` bash
-git clone https://github.com/your_username/text_to_image_generator.git
+git clone https://github.com/pjdoland/desktop-wallpaper-quotes.git
 ```
 
 2. Install the Pillow library:
@@ -46,7 +46,7 @@ pip install Pillow
 3. Run the script:
 
 ``` bash
-python text_to_image_generator.py
+python desktop-pattern-quotes.py
 ```
 
 4. The generated images will be saved in the `output` directory.
