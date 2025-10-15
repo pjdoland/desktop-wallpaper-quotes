@@ -45,8 +45,11 @@ for i, text in enumerate(texts):
     # Get text size
     width, height = 0, 0
     for line in wrapped_text:
-        width = max(width, draw.textsize(line, font)[0])
-        height += draw.textsize(line, font)[1]
+        bbox = draw.textbbox((0, 0), line, font=font)
+        line_width = bbox[2] - bbox[0]
+        line_height = bbox[3] - bbox[1]
+        width = max(width, line_width)
+        height += line_height
 
     # Calculate x and y coordinates to center the text
     x = (image_size[0] - width) / 2
@@ -56,7 +59,9 @@ for i, text in enumerate(texts):
     y_text = y
     for line in wrapped_text:
         draw.text((x, y_text), line, fill=text_color, font=font)
-        y_text += draw.textsize(line, font)[1] + line_height
+        bbox = draw.textbbox((0, 0), line, font=font)
+        line_height_px = bbox[3] - bbox[1]
+        y_text += line_height_px + line_height
 
     # Save image
     image.save(f"{output_dir}/{i+1}.jpg", "JPEG")

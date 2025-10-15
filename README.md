@@ -29,12 +29,20 @@ A simple Python script to create images with text from a file, centering the tex
 
 ``` bash
 git clone https://github.com/pjdoland/desktop-wallpaper-quotes.git
+cd desktop-wallpaper-quotes
 ```
 
-2. Install the Pillow library:
+2. Create and activate a virtual environment (recommended):
 
 ``` bash
-pip install Pillow
+python3 -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+3. Install dependencies:
+
+``` bash
+pip install -r requirements.txt
 ```
 
 ## Usage
