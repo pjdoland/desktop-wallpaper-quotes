@@ -1,0 +1,38 @@
+# Output directories
+output/
+test-output/
+*-output/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+test-*.txt
+temp.txt
+
+# Compiled files
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
